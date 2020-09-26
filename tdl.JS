@@ -27,7 +27,7 @@ var input = document.querySelector ('#td');
 			}*/
 		
 		function handletodoList (event) {
-			console.log("I am Click"); 
+			console.log("Kill me Heal me"); 
 			todoinput.style = "text-decoration:  line-through";	
 		}
 	}
