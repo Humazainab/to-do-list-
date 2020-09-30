@@ -30,6 +30,13 @@ var input = document.querySelector ('#td');
 			console.log("cloudy"); 
 			todoinput.style = "text-decoration:  line-through";	
 		}
+		function createTask() {
+			const newTask = getElementById ("task");
+			const taskList = localStorage.taskList ?  JSON.parse(localStorage.taskList): []; 
+			taskList.push(newTask.value);
+			newTask.value = '';
+			localStorage.taskList = JSON.stringify(taskList);
+		}
 	}
 		
 	}
