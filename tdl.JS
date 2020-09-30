@@ -30,12 +30,12 @@ var input = document.querySelector ('#td');
 			console.log("cloudy"); 
 			todoinput.style = "text-decoration:  line-through";	
 		}
-		function createTask() {
-			const newTask = getElementById ("task");
-			const taskList = localStorage.taskList ?  JSON.parse(localStorage.taskList): []; 
-			taskList.push(newTask.value);
+		function button() {
+			const newTask = getElementById ("td");
+			const todoList = localStorage.todoinput ?  JSON.parse(localStorage.todoinput): []; 
+			todoList.push(newTask.value);
 			newTask.value = '';
-			localStorage.taskList = JSON.stringify(taskList);
+			localStorage.todoinput = JSON.stringify(todoList);
 		}
 	}
 		
