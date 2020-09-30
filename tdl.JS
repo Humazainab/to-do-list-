@@ -27,7 +27,7 @@ var input = document.querySelector ('#td');
 			}*/
 		
 		function handletodoList (event) {
-			console.log("cloud"); 
+			console.log("cloudy"); 
 			todoinput.style = "text-decoration:  line-through";	
 		}
 	}
