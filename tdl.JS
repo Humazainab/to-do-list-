@@ -22,8 +22,13 @@ var input = document.querySelector ('#td');
 			todo.appendChild(todoinput);
 			todo.appendChild(todocheckbox);
 			todoList.appendChild(todo);
-			var localStorage = Storage;
-			console.log(localStorage);
+			/*var localStorage = Storage;*/
+			function localStorage () {
+				localStorage.getitemById ("ID");
+				console.log(localStorage);
+			}
+			
+		
 			
 			/*if (todocheckbox =='checked') {
 			input.strike (); 
