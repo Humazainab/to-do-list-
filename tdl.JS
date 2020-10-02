@@ -22,6 +22,8 @@ var input = document.querySelector ('#td');
 			todo.appendChild(todoinput);
 			todo.appendChild(todocheckbox);
 			todoList.appendChild(todo);
+			localStorage.setItem ("1", "My Task");
+			
 			/*if (todocheckbox =='checked') {
 			input.strike (); 
 			}*/
@@ -30,13 +32,7 @@ var input = document.querySelector ('#td');
 			console.log("cloudy"); 
 			todoinput.style = "text-decoration:  line-through";	
 		}
-		function button() {
-			const newTask = getElementById ("td");
-			const todoList = localStorage.todoinput ?  JSON.parse(localStorage.todoinput): []; 
-			todoList.push(newTask.value);
-			newTask.value = '';
-			localStorage.todoinput = JSON.stringify(todoList);
-		}
+		
 	}
 		
 	}
