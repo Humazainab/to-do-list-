@@ -22,7 +22,8 @@ var input = document.querySelector ('#td');
 			todo.appendChild(todoinput);
 			todo.appendChild(todocheckbox);
 			todoList.appendChild(todo);
-			localStorage.setItem ("1", "My Task");
+			var localStorage = Storage;
+			console.log(localStorage);
 			
 			/*if (todocheckbox =='checked') {
 			input.strike (); 
