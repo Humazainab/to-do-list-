@@ -25,7 +25,7 @@ var input = document.querySelector ('#td');
 			/*var localStorage = Storage;*/
 			function localStorage () {
 				localStorage.getitemById ("ID");
-				console.log(localStorage);
+				console.log(localStorage.key(1));
 			}
 			
 		
